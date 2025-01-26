@@ -2595,7 +2595,7 @@ input, select, textarea {
 
 	#footer {
 		text-align: center;
-		padding: 4em 0 4em 0;
+		padding: 4em 0 1em 0;
 	}
 
 		#footer a {
@@ -2618,7 +2618,7 @@ input, select, textarea {
 		padding: 0.75em 2em 0.75em 2em;
 		border-radius: 8px;
 		color: #8b9790;
-		margin: 4em 0 0 0;
+		/* margin: 4em 0 0 0; */
 	}
 
 		#copyright a {
