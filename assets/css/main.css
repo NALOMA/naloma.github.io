@@ -1893,6 +1893,7 @@ input, select, textarea {
 		list-style-type: none; 
 		padding-left: 0em; 
 		margin: 0 auto;
+		margin-bottom: 3em;
 	}
 
 /* Divided */
