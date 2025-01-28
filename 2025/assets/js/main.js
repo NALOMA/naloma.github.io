@@ -72,3 +72,74 @@
 				});
 
 })(jQuery);
+
+
+
+
+// function shufflePC() {
+// 	const ul = document.getElementById('PC');
+// 	const items = Array.from(ul.children); // Convert HTMLCollection to an array
+
+// 	// Shuffle the array using the Fisher-Yates shuffle algorithm
+// 	for (let i = items.length - 1; i > 0; i--) {
+// 		const j = Math.floor(Math.random() * (i + 1)); // Random index
+// 		[items[i], items[j]] = [items[j], items[i]]; // Swap items
+// 	}
+
+// 	// Clear the current list and append the shuffled items
+// 	ul.innerHTML = '';
+// 	items.forEach(item => ul.appendChild(item));
+// }
+
+
+function shuffleArray(array) {
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]]; // Swap elements
+	}
+	return array;
+}
+
+function shufflePC() {
+	const list = document.getElementById('PC');
+	const items = Array.from(list.children); // Get all <li> elements
+
+	// Separate items into two arrays
+	const cochairItems = [];
+	const otherItems = [];
+	const itemType = [];
+
+	items.forEach((item, index) => {
+		if (item.classList.contains('cochair')) {
+			cochairItems.push({ element: item, index }); // Include original index
+			itemType.push(1)
+		} else {
+			otherItems.push({ element: item, index }); // Include original index
+			itemType.push(0)
+		}
+	});
+
+	// Shuffle the items in each array
+	const shuffledCochairItems = shuffleArray(cochairItems);
+	const shuffledOtherItems = shuffleArray(otherItems);
+
+	console.log('Cochair Items:', shuffledCochairItems);
+	console.log('Just Items:', shuffledOtherItems);
+	console.log('Item Types:', itemType);
+
+	// Create a new list preserving positions
+	const newList = [];
+	itemType.forEach(type => {
+		if (type == 1) {
+			newList.push(shuffledCochairItems.shift().element);
+		} else {
+			newList.push(shuffledOtherItems.shift().element);
+		}
+	});
+
+	console.log('New Items:', newList);
+
+	// Clear the original list and append the shuffled items
+	list.innerHTML = '';
+	newList.forEach(item => list.appendChild(item));
+}

@@ -1894,6 +1894,7 @@ input, select, textarea {
 		padding-left: 0em; 
 		margin: 0 auto;
 		margin-bottom: 3em;
+		display: block;
 	}
 
 /* Divided */
@@ -2596,7 +2597,7 @@ input, select, textarea {
 
 	#footer {
 		text-align: center;
-		padding: 4em 0 1em 0;
+		padding: 1.6em 0 1em 0;
 	}
 
 		#footer a {

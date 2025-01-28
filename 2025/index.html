@@ -129,9 +129,9 @@
 										<h2 class="major"><span>Program Committee</span></h2>
 										<div>
 											<div class="row">
-												<ul class="listing">
-													<li><b>Lasha Abzianidze</b> (co-Chair), Utrecht University</li>
-													<li><b>Valeria de Paiva</b> (co-Chair), Topos Institute</li>
+												<ul class="listing" id="PC">
+													<li class="cochair"><b>Lasha Abzianidze</b> (co-Chair), Utrecht University</li>
+													<li class="cochair"><b>Valeria de Paiva</b> (co-Chair), Topos Institute</li>
 													<li><b>Stergios Chatzikyriakidis</b>, University of Crete</li>
 													<li><b>Aikaterini-Lida Kalouli</b>, Ludwig Maximilian University of Munich</li>
 													<li><b>Katrin Erk</b>, University of Texas at Austin</li>
@@ -203,6 +203,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				// Shuffle the list when the page loads
+				window.onload = shufflePC;
+			</script>
 
 	</body>
 </html>
