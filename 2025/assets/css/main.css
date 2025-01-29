@@ -2336,7 +2336,7 @@ input, select, textarea {
 		padding: .5em 0 8em 0;
 		/* background: #fff; */
 		background-image: url("../../images/cropped-naloma_bg2.png");
-		background-position-y: 15%;
+		background-position-y: 20%;
 		background-size: 100%;
 		margin: 0 auto;
 	}
@@ -2760,7 +2760,7 @@ input, select, textarea {
 				padding: calc(14em + 44px) 0 2em 0;
 				background-image: url("../../images/cropped-naloma_bg2.png");
 				background-repeat: repeat-x;
-				background-position-y: 0%;
+				background-position-y: 10%;
 				background-size: 100%;
 			}
 
