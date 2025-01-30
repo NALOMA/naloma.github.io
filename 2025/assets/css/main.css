@@ -72,6 +72,13 @@ input, select, textarea {
 	appearance: none;
 }
 
+.keynote-tba {
+	margin: auto; 
+	color:rgb(255, 0, 187);
+	writing-mode: vertical-rl;
+	text-orientation: upright;	
+}
+
 /* Basic */
 
 	html {
