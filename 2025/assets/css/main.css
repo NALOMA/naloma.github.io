@@ -79,6 +79,13 @@ input, select, textarea {
 	text-orientation: upright;	
 }
 
+/* User defined */
+.hidden-text {
+    position: absolute;
+    left: -9999px; /* Moves the text far left */
+}
+
+
 /* Basic */
 
 	html {
