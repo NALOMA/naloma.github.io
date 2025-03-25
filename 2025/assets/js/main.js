@@ -100,6 +100,26 @@ function shuffleArray(array) {
 	return array;
 }
 
+
+function shuffleKeynote(n) {
+	const list = document.getElementById('keynote-list');
+	const all_items = Array.from(list.children); // Get all <li> elements
+	const items = all_items.splice(0, n);
+
+	// Shuffle the items
+	const shuffled = shuffleArray(items);
+
+	// console.log('shuffled', shuffled);
+	// console.log('Just Items:', shuffledOtherItems);
+	// console.log('Item Types:', itemType);
+
+	// Clear the original list and append the shuffled items
+	list.innerHTML = '';
+	shuffled.forEach(item => list.appendChild(item));
+	all_items.forEach(item => list.appendChild(item));
+}
+
+
 function shufflePC() {
 	const list = document.getElementById('PC');
 	const items = Array.from(list.children); // Get all <li> elements
@@ -123,9 +143,9 @@ function shufflePC() {
 	const shuffledCochairItems = shuffleArray(cochairItems);
 	const shuffledOtherItems = shuffleArray(otherItems);
 
-	console.log('Cochair Items:', shuffledCochairItems);
-	console.log('Just Items:', shuffledOtherItems);
-	console.log('Item Types:', itemType);
+	// console.log('Cochair Items:', shuffledCochairItems);
+	// console.log('Just Items:', shuffledOtherItems);
+	// console.log('Item Types:', itemType);
 
 	// Create a new list preserving positions
 	const newList = [];
@@ -137,7 +157,7 @@ function shufflePC() {
 		}
 	});
 
-	console.log('New Items:', newList);
+	// console.log('New Items:', newList);
 
 	// Clear the original list and append the shuffled items
 	list.innerHTML = '';

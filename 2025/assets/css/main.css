@@ -79,12 +79,75 @@ input, select, textarea {
 	text-orientation: upright;	
 }
 
-/* User defined */
+/* ================== User defined ===================== */
 .hidden-text {
     position: absolute;
     left: -9999px; /* Moves the text far left */
 }
 
+.blinking {
+    /* text-decoration: underline; */
+	animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.5; } /* Hide the div halfway through */
+}
+
+/* .cursor {
+    display: inline-block;
+    width: 5px;
+    background-color: black;
+    height: 1em;
+    animation: blink 0.7s steps(2, start) infinite;
+} */
+
+.cursor::after {
+    content: ">_"; /* Cursor symbol */
+    display: inline-block;
+    width: 10px;
+    animation: blink 0.7s steps(2, start) infinite;
+}
+
+/* ========= keynote ========= */
+.keynote-container {
+	display: flex;
+	flex-direction: column; /* Stack keynotes vertically */
+	gap: 20px; /* Space between keynotes */
+	max-width: 400px; /* Adjust as needed */
+	margin: 0 auto;
+}
+
+.keynote {
+	display: flex;
+	align-items: center; /* Align image and text */
+	gap: 15px; /* Space between image and text */
+}
+
+.keynote img {
+	width: 100px; /* Adjust image size */
+	height: 100px;
+	/* padding: 0px; */
+	border-radius: 50%; /* Make images circular */
+	object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.keynote-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.keynote-name {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.keynote-affiliation {
+	font-size: 1em;
+	color: gray;
+}
+
+/* ==================================================== */
 
 /* Basic */
 

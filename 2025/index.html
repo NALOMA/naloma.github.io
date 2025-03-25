@@ -151,7 +151,7 @@
 												<div>Submissions will be double-blind reviewed, and all long/short papers and extended abstracts must be anonymous, i.e. not reveal author(s) on the title page or through self-references. Both extended abstracts and papers must be formatted according to the <a href="https://github.com/acl-org/acl-style-files">ACL style-files</a> or the ACL <a href="https://www.overleaf.com/latex/templates/association-for-computational-linguistics-acl-conference/jvxskxpnznfj">Overleaf template</a>.  All submissions must adhere to the ARR guidelines about <a href="https://aclrollingreview.org/cfp#instructions-for-two-way-anonymized-review">Anonymized Review</a>, <a href="https://aclrollingreview.org/cfp#authorship">Authorship</a>, <a href="https://aclrollingreview.org/cfp#citation-and-comparison">Citation and Comparison</a>, and <a href="https://aclrollingreview.org/cfp#ethics-policy">Ethics Policy</a> (without requiring completion of the responsible NLP research checklist). 
 												</div>	
 
-												<div>Both papers and extended abstracts should be submitted via <a href="">LINK_TBA</a>.</div>
+												<div>Both papers and extended abstracts should be submitted via <a class="blinking" href="https://openreview.net/group?id=ESSLLI.eu/2025/Workshop/NALOMA">openreview</a>.</div>
 
 												<div>The workshop participants must register for <a href="https://2025.esslli.eu/">ESSLLI 2025</a>.</div>
 
@@ -178,7 +178,33 @@
 								<section id="keynotes" class="box features">
 									<h2 class="major"><span>Keynotes</span></h2>
 										<div class="row">
-												<span class="keynote-tba">To be announced</span>
+											<!-- <span class="keynote-tba">To be announced</span> -->
+
+											<div id="keynote-list" class="keynote-container">
+												<div class="keynote">
+													<img src="images/aaron.jpg" alt="Aaron Steven White">
+													<div class="keynote-info">
+														<div class="keynote-name">Aaron Steven White</div>
+														<div class="keynote-affiliation">University of Rochester </div>
+													</div>
+												</div>
+										
+												<div class="keynote">
+													<img src="images/kyle.jpg" alt="Kyle Richardson">
+													<div class="keynote-info">
+														<div class="keynote-name">Kyle Richardson</div>
+														<div class="keynote-affiliation">Allen Institute for AI</div>
+													</div>
+												</div>
+
+												<div class="keynote">
+													<img style="padding: 25px;" src="images/load1.gif" alt="">
+													<div class="keynote-info">
+														<div class="keynote-name"><span class="cursor"></span></div>
+														<div class="keynote-affiliation"><span class="cursor"></span></div>
+													</div>
+												</div>
+											</div>
 										</div>
 								</section>
 								<!-- Program committe -->
@@ -279,7 +305,11 @@
 
 			<script>
 				// Shuffle the list when the page loads
-				window.onload = shufflePC;
+				// window.onload = shufflePC;
+				// window.onload = shuffleKeynote;
+
+				document.addEventListener("DOMContentLoaded", shufflePC());
+				document.addEventListener("DOMContentLoaded", shuffleKeynote(2));
 			</script>
 
 	</body>
