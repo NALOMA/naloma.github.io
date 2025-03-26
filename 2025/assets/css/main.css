@@ -85,13 +85,31 @@ input, select, textarea {
     left: -9999px; /* Moves the text far left */
 }
 
+
+@keyframes blink {
+    50% { opacity: 0.5; } /* Hide the div halfway through */
+}
+
 .blinking {
     /* text-decoration: underline; */
 	animation: blink 1s infinite;
 }
 
-@keyframes blink {
-    50% { opacity: 0.5; } /* Hide the div halfway through */
+
+@keyframes glow-move {
+    0% { background-position: -100%; }
+    100% { background-position: 100%; }
+}
+
+.moving-glow {
+    position: relative;
+    color: white;
+    background: linear-gradient(90deg, transparent, blue, transparent);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow-move 1s linear infinite;
 }
 
 /* .cursor {
