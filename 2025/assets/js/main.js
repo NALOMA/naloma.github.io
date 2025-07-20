@@ -163,3 +163,16 @@ function shufflePC() {
 	list.innerHTML = '';
 	newList.forEach(item => list.appendChild(item));
 }
+
+
+
+// workshop program 
+// Optional: Add click handlers for sessions
+document.querySelectorAll('.conference-program .session').forEach(session => {
+	session.addEventListener('click', function() {
+		if (this.classList.contains('empty')) return;
+		
+		const title = this.querySelector('.session-title')?.textContent || 'Session';
+		alert(`Session: ${title}`);
+	});
+});

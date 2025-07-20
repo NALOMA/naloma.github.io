@@ -127,6 +127,119 @@ input, select, textarea {
     animation: blink 0.7s steps(2, start) infinite;
 }
 
+
+/* ========= program table ========= */
+.workshop-program { 
+	font-family: 'Segoe UI', sans-serif; 
+	margin: 0; 
+	/* padding: 20px;  */
+	background: #f5f5f5; 
+}
+.workshop-program-container { 
+	max-width: 1200px; 
+	margin: 0 auto; 
+	background: white; 
+	border-radius: 10px; 
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+	overflow: hidden; 
+}
+.workshop-program-header { 
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+	color: white; 
+	padding: 30px; 
+	text-align: center; 
+}
+.workshop-program-header h1 { 
+	margin: 0; 
+	font-size: 2.5em; 
+	font-weight: 300; 
+}
+.workshop-program-calendar { 
+	margin: 1.5em; 
+}
+.workshop-program .fc-event-keynote { 
+	background: linear-gradient(135deg, #961616, #f76530) !important; 
+	border: none !important; 
+}
+.workshop-program .fc-event-paper { 
+	background: linear-gradient(135deg, #074cb3, #4887e4) !important; 
+	border: none !important; 
+}
+.workshop-program .fc-event-contributed { 
+	background: linear-gradient(135deg, #0471b9, #28cfcf) !important; 
+	border: none !important; 
+	color: #2d3748 !important; 
+}
+.workshop-program .fc-event-special { 
+	background: linear-gradient(135deg, #127a04, #88ff51) !important; 
+	border: none !important; 
+	color: #2d3748 !important; 
+}
+.workshop-program .fc-event { 
+	cursor: pointer; 
+	transition: all 0.2s ease; 
+	border-radius: 4px !important; 
+	font-weight: 500; 
+}
+.workshop-program .fc-event:hover { 
+	transform: translateY(-3px); 
+	box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+	border: 2px solid rgba(255,255,255,0.8) !important;
+	filter: brightness(1.25);
+}
+.workshop-program .fc-event-title { 
+	pointer-events: none; 
+}
+.workshop-program .fc-event-time { 
+	pointer-events: none; 
+}
+.workshop-program .fc-timegrid-slot { 
+	height: 20px !important; 
+}
+.workshop-program .fc-timegrid-slot-label { 
+	font-size: 12px; 
+	position: relative; 
+	top: -5px; 
+}
+.workshop-program .fc-timegrid-axis { 
+	padding-top: 10px; 
+}
+
+.fc-col-header-cell-cushion {
+	font-weight: 700;
+	text-decoration: None;
+	color: #6b7770;
+}
+
+.workshop-program-abstracts { 
+	margin: 20px; 
+	padding: 20px; 
+	background: #f8f9fa; 
+	border-radius: 8px; 
+}
+
+.workshop-program-abstract { 
+	margin-bottom: 10px; 
+	padding: 0px 0px 0px 10px; 
+	background: white; 
+	border-radius: 6px; 
+	border-left: 4px solid #667eea; 
+}
+
+.workshop-program-abstract h3 a {
+	color:#127a04;
+	/* text-decoration:underline; */
+}
+
+.workshop-program-abstract h3 { 
+	margin: 0 0 10px 0; 
+	color: #2d3748; 
+}
+.workshop-program-abstract p { 
+	margin: 5px 0 0 0; 
+	color: #4a5568; 
+}
+
 /* ========= keynote ========= */
 .keynote-container {
 	display: flex;
@@ -285,7 +398,10 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	p, ul, ol, dl, table {
+	/* p, ul, ol, dl, table { !!!was
+		margin-bottom: 3em;
+	} */
+	p, ul, ol, dl {
 		margin-bottom: 3em;
 	}
 
