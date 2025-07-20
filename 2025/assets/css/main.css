@@ -188,7 +188,8 @@ input, select, textarea {
 	filter: brightness(1.25);
 }
 .workshop-program .fc-event-title { 
-	pointer-events: none; 
+	pointer-events: none;
+	white-space: pre-line;
 }
 .workshop-program .fc-event-time { 
 	pointer-events: none; 
