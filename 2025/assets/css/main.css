@@ -158,20 +158,20 @@ input, select, textarea {
 	margin: 1.5em; 
 }
 .workshop-program .fc-event-keynote { 
-	background: linear-gradient(135deg, #961616, #f76530) !important; 
+	background: linear-gradient(135deg, #4fad42, #B1DDAB) !important; 
 	border: none !important; 
 }
 .workshop-program .fc-event-paper { 
-	background: linear-gradient(135deg, #074cb3, #4887e4) !important; 
+	background: linear-gradient(135deg, #eb7040, #eea385) !important; 
 	border: none !important; 
 }
 .workshop-program .fc-event-contributed { 
-	background: linear-gradient(135deg, #0471b9, #28cfcf) !important; 
+	background: linear-gradient(135deg, #e784a4, #dbb3bf) !important; 
 	border: none !important; 
 	color: #2d3748 !important; 
 }
 .workshop-program .fc-event-special { 
-	background: linear-gradient(135deg, #127a04, #88ff51) !important; 
+	background: linear-gradient(135deg, #f7b178, #f7ceac) !important; 
 	border: none !important; 
 	color: #2d3748 !important; 
 }
@@ -190,9 +190,15 @@ input, select, textarea {
 .workshop-program .fc-event-title { 
 	pointer-events: none;
 	white-space: pre-line;
+	/* font-weight: 600; */
+	color: black;
+}
+.workshop-program .fc-event-keynote .fc-event-title {
+    font-weight: 600;
 }
 .workshop-program .fc-event-time { 
 	pointer-events: none; 
+	color: #830101 !important;
 }
 .workshop-program .fc-timegrid-slot { 
 	height: 20px !important; 
@@ -210,6 +216,15 @@ input, select, textarea {
 	font-weight: 700;
 	text-decoration: None;
 	color: #6b7770;
+}
+
+#calendar.workshop-program-calendar::before {
+    content: "All times are in GMT+2";
+    position: absolute;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    text-align: left;
 }
 
 .workshop-program-abstracts { 
