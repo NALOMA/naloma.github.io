@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
             { title: 'Automatic Evaluation of Linguistic Validity in Japanese CCG Treebanks', start: '2025-08-07T17:25', end: '2025-08-07T17:50', extendedProps: { type: 'contributed', link: 'talk7' } },
             { title: 'How Often does Natural Logic Actually Meet Machine Learning?', start: '2025-08-07T17:50', end: '2025-08-07T18:15', extendedProps: { type: 'contributed', link: 'talk8' } },
 
-            { title: 'Keynote: Kyle Richardson\nTBA', start: '2025-08-08T17:00', end: '2025-08-08T17:55', extendedProps: { type: 'keynote', link: 'keynote3' } }
+            { title: 'Keynote: Kyle Richardson\nTBA', start: '2025-08-08T17:00', end: '2025-08-08T17:55', extendedProps: { type: 'keynote', link: 'keynote3' } },
+            { title: 'Closing', start: '2025-08-08T17:55', end: '2025-08-08T18:00', extendedProps: { type: 'special' } },
         ]
     });
     calendar.render();
