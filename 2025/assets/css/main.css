@@ -242,6 +242,11 @@ input, select, textarea {
 	border-left: 4px solid #667eea; 
 }
 
+.workshop-program-abstract.keynote-abstract { 
+	background: #effaef;
+	border-left: 4px solid #0caf06; 
+}
+
 .workshop-program-abstract h3 a {
 	color:#127a04;
 	/* text-decoration:underline; */
@@ -254,6 +259,7 @@ input, select, textarea {
 .workshop-program-abstract p { 
 	margin: 5px 0 0 0; 
 	color: #4a5568; 
+	text-align: justify;
 }
 
 /* ========= keynote ========= */
