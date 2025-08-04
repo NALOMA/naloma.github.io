@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hiddenDays: [0, 6],
         allDaySlot: false,
         height: 'auto',
+        
         eventClick: function(info) {
             const element = document.getElementById(info.event.extendedProps.link);
             // const menuHeight = 80; // Adjust this value to match your menu height
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 behavior: 'smooth'
             });
         },
+
         eventClassNames: function(info) { return 'fc-event-' + info.event.extendedProps.type; },
         events: [
             { title: 'Opening', start: '2025-08-04T17:00', end: '2025-08-04T17:05', extendedProps: { type: 'special' } },
@@ -35,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // { title: 'Dataset Creation for Visual Entailment using Generative AI', start: '2025-08-05T17:00', end: '2025-08-05T17:25', extendedProps: { type: 'paper', link: 'talk3' } },
             // { title: 'Implementing a Logical Inference System for Japanese Comparatives', start: '2025-08-05T17:25', end: '2025-08-05T17:55', extendedProps: { type: 'paper', link: 'talk1' } },
             // { title: 'MERGE: Minimal Expression-Replacement GEneralization Test for NLI', start: '2025-08-05T17:55', end: '2025-08-05T18:20', extendedProps: { type: 'contributed', link: 'talk6' } },
-            { title: 'Implementing a Logical Inference System for Japanese Comparatives', start: '2025-08-05T17:00', end: '2025-08-05T17:30', extendedProps: { type: 'paper', link: 'talk1' } },
+            { title: 'Implementing a Logical Inference System for Japanese Comparatives', start: '2025-08-05T17:00', end: '2025-08-05T17:30', extendedProps: { type: 'paper', link: 'talk3' } },
             { title: 'MERGE: Minimal Expression-Replacement GEneralization Test for NLI', start: '2025-08-05T17:30', end: '2025-08-05T17:55', extendedProps: { type: 'contributed', link: 'talk6' } },
 
             { title: 'Keynote: Mehrnoosh Sadrzadeh\nHow Can Large Language Model Become More Human?', start: '2025-08-06T17:00', end: '2025-08-06T17:55', extendedProps: { type: 'keynote', link: 'keynote2' } },
-            { title: 'Unpacking Legal Reasoning in LLMs: Chain-of-Thought as a Key to Human-Machine Alignment in Essay-Based NLU Tasks', start: '2025-08-06T17:55', end: '2025-08-06T18:20', extendedProps: { type: 'paper', link: 'talk2' } },
+            { title: 'Unpacking Legal Reasoning in LLMs: Chain-of-Thought as a Key to Human-Machine Alignment in Essay-Based NLU Tasks', start: '2025-08-06T17:55', end: '2025-08-06T18:20', extendedProps: { type: 'paper', link: 'talk1' } },
 
-            { title: 'Dataset Creation for Visual Entailment using Generative AI', start: '2025-08-07T17:00', end: '2025-08-07T17:25', extendedProps: { type: 'paper', link: 'talk3' } },
+            { title: 'Dataset Creation for Visual Entailment using Generative AI', start: '2025-08-07T17:00', end: '2025-08-07T17:25', extendedProps: { type: 'paper', link: 'talk2' } },
             { title: 'Building a Compact Math Corpus', start: '2025-08-07T17:25', end: '2025-08-07T17:50', extendedProps: { type: 'paper', link: 'talk5' } },
             { title: 'Automatic Evaluation of Linguistic Validity in Japanese CCG Treebanks', start: '2025-08-07T17:50', end: '2025-08-07T18:15', extendedProps: { type: 'contributed', link: 'talk7' } },
             

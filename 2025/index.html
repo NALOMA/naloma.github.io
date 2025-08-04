@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCN5WMTYBF"></script>
@@ -124,7 +125,9 @@
 											<div class="workshop-program-abstracts">
 												<h2>Talk Abstracts</h2>
 												<div class="workshop-program-abstract keynote-abstract" id="keynote1">
-													<h3><a href="#program" title="Jump up">⤴</a> <strong>Keynote:</strong> Understanding Complex Situation Descriptions</h3>
+													<h3><a href="#program" title="Jump up">⤴</a> Keynote <a href="slides/keynote-1.pdf">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														Understanding Complex Situation Descriptions</h3>
 													<p><strong>Aaron Steven White</strong></p>
 													<p>We use natural language to convey information about situations: things that happen or stuff that is true. This ability is supported by systematic relationships between the way we conceptualize situations and the way we describe them. These systematic relationships in turn underwrite inferences that go beyond what one strictly says in describing a situation. The question that motivates this talk is how to design systems that correctly capture the inferences we draw about situations on the basis of their descriptions.
 													<br>
@@ -133,52 +136,72 @@
 													I discuss the benefits and drawbacks of these two approaches and present case studies in synthesizing them that focus specifically on how best to capture inferences about complex situations–i.e. situations, like building a house, that themselves may be composed of subsituations, like laying the house’s foundations, framing the house, etc. I argue that we should ultimately strive for ontology-free representations but that the challenges inherent to reasoning about complex situations highlight the persistent benefits of situation ontologies in providing representational scaffolding for the construction and evaluation of such representations.</p>
 												</div>
 												<div class="workshop-program-abstract keynote-abstract" id="keynote2">
-													<h3><a href="#program" title="Jump up">⤴</a> <strong>Keynote:</strong> How can large language model become more human?</h3>
+													<h3><a href="#program" title="Jump up">⤴</a> Keynote <a href="">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														How can large language model become more human?</h3>
 													<p><strong>Mehrnoosh Sadrzadeh</strong> (Joint work with Daphne Wang, Miloš Stanojević, Wing-Yee Chow, and Richard Breheny)</p>
 													<p>Psycholinguistic experiments reveal that efficiency of human language use is founded on predictions at both syntactic and lexical levels. Previous models of human prediction exploiting LLMs have used an information theoretic measure called surprisal, with success on naturalistic text in a wide variety of languages, but under-performance on challenging text such as garden path sentences. This paper introduces a novel framework that combines the lexical predictions of an LLM with the syntactic structures provided by a dependency parser. The framework gives rise to an Incompatibility Fraction. When tested on two garden path datasets, it correlated well with human reading times, distinguished between easy and hard garden path, and outperformed surprisal.</p>
 												</div>
 												<div class="workshop-program-abstract keynote-abstract" id="keynote3">
-													<h3><a href="#program" title="Jump up">⤴</a> <strong>Keynote:</strong> Understanding the Logic of Generative AI through Logic</h3>
+													<h3><a href="#program" title="Jump up">⤴</a> Keynote <a href="">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														Understanding the Logic of Generative AI through Logic</h3>
 													<p><strong>Kyle Richardson</strong></p>
 													<p>Symbolic logic has long served as the de-facto language for expressing complex knowledge throughout computer science, owing to its clean semantics. Symbolic approaches to reasoning that are driven by declarative knowledge, in sharp contrast to purely machine learning-based approaches, have the advantage of allowing us to reason transparently about the behavior and correctness of the resulting systems. In this talk, we focus on the broad question: Can the declarative approach be leveraged to better understand and formally specify algorithms for large language models (LLMs)? We focus on formalizing recent direct preference alignment (DPA) loss functions, such as DPO, that are currently at the forefront of LLM alignment. Specifically, we ask: Given an existing DPA loss, can we systematically derive a symbolic expression that characterizes its semantics? We outline the details of a novel formalism we developed for these purposes. We also discuss how this formal view of preference learning sheds new light on both the size and structure of the DPA loss landscape and makes it possible to derive new alignment algorithms from first principles. Our framework and approach aim not only to provide guidance for the AI alignment community, but also to open up new opportunities for researchers in formal semantics to engage more directly with the development and analysis of LLM algorithms.</p>
 												</div>
-												<div class="workshop-program-abstract" id="talk1">
-													<h3><a href="#program" title="Jump up">⤴</a> <a href="proc/camera-ready/3_Implementing_a_Logical_Infer.pdf"><strong>Paper 🗎:</strong></a> Implementing a Logical Inference System for Japanese Comparatives</h3>
+												<div class="workshop-program-abstract" id="talk3">
+													<h3><a href="#program" title="Jump up">⤴</a> <a href="papers/paper-3.pdf">Paper<i class="material-icons">file_download</i></a> <a href="slides/slides-3.pdf">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														Implementing a Logical Inference System for Japanese Comparatives</h3>
 													<p><strong>Yosuke Mikami, Daiki Matsuoka, Hitomi Yanaka</strong></p>
 													<p>Natural Language Inference (NLI) involving comparatives is challenging because it requires understanding quantities and comparative relations expressed by sentences. While some approaches leverage Large Language Models (LLMs), we focus on logic-based approaches grounded in compositional semantics, which are promising for robust handling of numerical and logical expressions. Previous studies along these lines have proposed logical inference systems for English comparatives. However, it has been pointed out that there are several morphological and semantic differences between Japanese and English comparatives. These differences make it difficult to apply such systems directly to Japanese comparatives. To address this gap, this study proposes ccg-jcomp, a logical inference system for Japanese comparatives based on compositional semantics. We evaluate the proposed system on a Japanese NLI dataset containing comparative expressions. We demonstrate the effectiveness of our system by comparing its accuracy with that of existing LLMs.</p>
 												</div>
-												<div class="workshop-program-abstract" id="talk2">
-													<h3><a href="#program" title="Jump up">⤴</a> <a href="proc/camera-ready/1_Unpacking_Legal_Reasoning_in.pdf"><strong>Paper 🗎:</strong></a> Unpacking Legal Reasoning in LLMs: Chain-of-Thought as a Key to Human-Machine Alignment in Essay-Based NLU Tasks</h3>
+												<div class="workshop-program-abstract" id="talk1">
+													<h3><a href="#program" title="Jump up">⤴</a> <a href="papers/paper-1.pdf">Paper<i class="material-icons">file_download</i></a> <a href="">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														Unpacking Legal Reasoning in LLMs: Chain-of-Thought as a Key to Human-Machine Alignment in Essay-Based NLU Tasks</h3>
 													<p><strong>Ying-Chu Yu, Sieh-Chuen Huang, Hsuan-Lei Shao</strong> </p>
 													<p>This study evaluates how Large Language Models (LLMs) perform deep legal reasoning on Taiwanese Status Law questions and investigates how Chain-of-Thought (CoT) prompting affects interpretability, alignment, and generalization. Using a two-stage evaluation framework, we first decomposed six real legal essay questions into 68 sub-questions covering issue spotting, statutory application, and inheritance computation. In Stage Two, full-length answers were collected under baseline and CoT-prompted conditions. Four LLMs—ChatGPT-4o, Gemini, Grok3, and Copilot—were tested. Results show CoT prompting significantly improved accuracy for Gemini (from 83.2% to 94.5%, p < 0.05) and Grok3, with moderate but consistent gains for ChatGPT and Copilot. Human evaluation of full-length responses revealed CoT answers received notably higher scores in issue coverage and reasoning clarity, with ChatGPT and Gemini gaining +2.67 and +1.92 points respectively. Despite these gains, legal misclassifications persist, highlighting alignment gaps between surface-level fluency and expert legal reasoning. This work opens the black box of legal NLU by tracing LLM reasoning chains, quantifying performance shifts under structured prompting, and providing a diagnostic benchmark for complex, open-ended legal tasks beyond multiple-choice settings.</p>
 												</div>
-												<div class="workshop-program-abstract" id="talk3">
-													<h3><a href="#program" title="Jump up">⤴</a> <a href="proc/camera-ready/2_Dataset_Creation_for_Visual_.pdf"><strong>Paper 🗎:</strong></a> Dataset Creation for Visual Entailment using Generative AI</h3>
+												<div class="workshop-program-abstract" id="talk2">
+													<h3><a href="#program" title="Jump up">⤴</a> <a href="papers/paper-2.pdf">Paper<i class="material-icons">file_download</i></a> <a href="">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														Dataset Creation for Visual Entailment using Generative AI</h3>
 													<p><strong>Rob Reijtenbach, Suzan Verberne, Gijs Wijnholds</strong></p>
 													<p>In this paper we present and validate a new synthetic dataset for training visual entailment models. Existing datasets for visual entailment are small and sparse compared to datasets for textual entailment. Manually creating datasets is labor-intensive. We base our synthetic dataset on the SNLI dataset for textual entailment. We take the premise text from SNLI as input prompts in a generative image model, Stable Diffusion, creating an image to replace each textual premise. We evaluate our dataset both intrinsically and extrinsically. For extrinsic evaluation, we evaluate the validity of the generated images by using them as training data for a visual entailment classifier based on CLIP feature vectors. We find that synthetic training data only leads to a slight drop in quality on SNLI-VE, with an F-score 0.686 compared to 0.703 when trained on real data. We also compare the quality of our generated training data to original training data on another dataset: SICK-VTE. Again, there is only a slight drop in F-score: from 0.400 to 0.384. These results indicate that in settings with data sparsity, synthetic data can be a promising solution for training visual entailment models.</p>
 												</div>
 												<div class="workshop-program-abstract" id="talk4">
-													<h3><a href="#program" title="Jump up">⤴</a> <a href="proc/camera-ready/4_In_the_Mood_for_Inference_Lo.pdf"><strong>Paper 🗎:</strong></a> In the Mood for Inference: Logic-Based Natural Language Inference with Large Language Models</h3>
+													<h3><a href="#program" title="Jump up">⤴</a> <a href="papers/paper-4.pdf">Paper<i class="material-icons">file_download</i></a> <a href="slides/slides-4.pdf">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														In the Mood for Inference: Logic-Based Natural Language Inference with Large Language Models</h3>
 													<p><strong>Bill Noble, Rasmus Blanck, Gijs Wijnholds</strong></p>
 													<p>In this paper we explore challenging Natural Language Inference datasets with a logic-based approach and Large Language Models (LLMs), in order to assess the validity of this hybrid strategy. We report on an experiment which combines an LLM meta-prompting strategy, eliciting logical representations, and Prover9, a first-order logic theorem prover. In addition, we experiment with the inclusion of (logical) world knowledge. Our findings suggest that (i) broad performance is sometimes on par, (ii) formula generation is rather brittle, and (iii) world knowledge aids performance relative to data annotation. We argue that these results explicate the weaknesses of both approaches. As such, we consider this study a source of inspiration for future work in the field of neuro-symbolic reasoning.</p>
 												</div>
 												<div class="workshop-program-abstract" id="talk5">
-													<h3><a href="#program" title="Jump up">⤴</a> <a href="proc/camera-ready/5_Building_a_Compact_Math_Corp.pdf"><strong>Paper 🗎:</strong></a> Building a Compact Math Corpus</h3>
+													<h3><a href="#program" title="Jump up">⤴</a> <a href="papers/paper-5.pdf">Paper<i class="material-icons">file_download</i></a> <a href="">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														Building a Compact Math Corpus</h3>
 													<p><strong>Andrea Ferreira</strong></p>
 													<p>This paper introduces the Compact Math Corpus (CMC), a preliminary resource for natural language processing in the mathematics domain. We process three open-access undergraduate textbooks from distinct mathematical areas and annotate them in the CoNLL-U format using a lightweight pipeline based on the spaCy Small model. The structured output enables the extraction of syntactic bigrams and TF-IDF scores, supporting a syntactic-semantic analysis of mathematical sentences.From the annotated data, we construct a classification dataset comprising bigrams potentially representing mathematical concepts, along with representative example sentences. We combine CMC with the conversational corpus UD English EWT and train a logistic regression model with K-fold cross-validation, achieving a minimum macro-F1 score of 0.989. These results indicate the feasibility of automatic concept identification in mathematical texts. The study is designed for easy replication in low-resource settings and to promote sustainable research practices. Our approach offers a viable path to tasks such as parser adaptation, terminology extraction, multiword expression modeling, and improved analysis of mathematical language structures.</p>
 												</div>
 												<div class="workshop-program-abstract" id="talk6">
-													<h3><a href="#program" title="Jump up">⤴</a> <strong>Abstract:</strong> MERGE: Minimal Expression-Replacement GEneralization Test for Natural Language Inference</h3>
+													<h3><a href="#program" title="Jump up">⤴</a> Abstract <a href="slides/slides-6.pdf">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														MERGE: Minimal Expression-Replacement GEneralization Test for Natural Language Inference</h3>
 													<p><strong>Mădălina Zgreabăn, Tejaswini Deoskar, Lasha Abzianidze</strong></p>
 													<p>In recent years, many NLI benchmarks have shown language models struggle to generalize well. However, these benchmarks are costly to build without automation and can result in unfair comparisons if they are not similar to the models’ training data.  To bridge these gaps, we propose the Minimal Expression-Replacement GEneralization (MERGE) test where we show how to create multiple variants of NLI problems without changing their sentence length, word overlap size, or entailment label. We evaluate NLI models with these variants, where a correct prediction for an NLI problem is when all its variants are classified correctly. Our results suggest that models do not generalize well, as they fail to correctly predict variants of almost 10% of NLI problems, despite them having the same underlying reasoning.</p>
 												</div>
 												<div class="workshop-program-abstract" id="talk7">
-													<h3><a href="#program" title="Jump up">⤴</a> <strong>Contributed talk:</strong> Automatic Evaluation of Linguistic Validity in Japanese CCG Treebanks</h3>
+													<h3><a href="#program" title="Jump up">⤴</a> Contributed talk <a href="">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														Automatic Evaluation of Linguistic Validity in Japanese CCG Treebanks</h3>
 													<p><strong>Asa Tomita, Hitomi Yanaka, Daisuke Bekki</strong></p>
 													<p>In Natural Language Inference, the accuracy of systems based on compositional semantics depends on the quality of syntactic analysis, which in turn relies on linguistically valid training and evaluation data, typically provided by treebanks. However, conventional treebank evaluation metrics focus on data coverage and fail to assess the linguistic validity of syntactic structures. This paper proposes novel evaluation methods to enable automatic and multi-faceted assessment of linguistic validity. We apply these methods to a Japanese treebank based on Combinatory Categorial Grammar and report the evaluation results.</p>
 												</div>
 												<div class="workshop-program-abstract" id="talk8">
-													<h3><a href="#program" title="Jump up">⤴</a> <strong>Contributed talk:</strong> How Often Does Natural Logic Actually Meet Machine Learning?</h3>
+													<h3><a href="#program" title="Jump up">⤴</a> Contributed talk <a href="">Slides<i class="material-icons">file_download</i></a>
+														<br>
+														How Often Does Natural Logic Actually Meet Machine Learning?</h3>
 													<p><strong>Lasha Abzianidze</strong></p>
 													<p>Reflecting on the workshop title raises the question of how frequently and to what extent natural logic has been coupled with machine learning in recent years. Unlike other formal logics, natural logic can be seen as more language-friendly, with formulas typically closely following the structure of natural language expressions, and offers certain quick reasoning with natural language. But does this generally make natural logic LLM-friendly, i.e., easier to be successfully paired with LLMs? In this talk, we will survey several works that combined a version of natural logic with deep learning with varying degrees of success. </p>
 												</div>

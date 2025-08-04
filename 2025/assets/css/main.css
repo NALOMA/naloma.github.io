@@ -262,6 +262,17 @@ input, select, textarea {
 	text-align: justify;
 }
 
+.material-icons {
+  vertical-align: middle; /* or adjust to -2px, baseline, etc. */
+}
+
+.workshop-program-abstract h3 a[href=""] {
+	display: none;
+	color: gray;
+	pointer-events: none;
+	text-decoration: none;
+}
+
 /* ========= keynote ========= */
 .keynote-container {
 	display: flex;
