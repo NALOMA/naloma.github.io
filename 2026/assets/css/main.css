@@ -97,6 +97,45 @@ input, select, textarea {
          0   -2px 0 #fff,
          0    2px 0 #fff;
 }
+
+.text-box {
+	text-align: left;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.hidden-text {
+    position: absolute;
+    left: -9999px; /* Moves the text far left */
+}
+
+
+@keyframes blink {
+    50% { opacity: 0.5; } /* Hide the div halfway through */
+}
+
+.blinking {
+    /* text-decoration: underline; */
+	animation: blink 1s infinite;
+}
+
+
+@keyframes glow-move {
+    0% { background-position: -100%; }
+    100% { background-position: 100%; }
+}
+
+.moving-glow {
+    position: relative;
+    color: white;
+    background: linear-gradient(90deg, transparent, blue, transparent);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow-move 1s linear infinite;
+}
+
 /* ===================================================== */
 
 /* Basic */
@@ -161,7 +200,7 @@ input, select, textarea {
 
 	h2 {
 		font-size: 2em;
-		margin: 0 0 1.5em 0;
+		margin: 0 0 1em 0;
 		line-height: 1em;
 	}
 
@@ -178,7 +217,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1.35em;
-		margin-top: 2em;
+		margin-top: 1em;
 	}
 
 	b, strong {
@@ -1299,7 +1338,7 @@ input, select, textarea {
 		}
 
 		header.major p {
-			margin: 0 0 1.5em 0;
+			margin: 0 0 1em 0;
 			position: relative;
 			top: -1em;
 		}
@@ -1815,7 +1854,7 @@ input, select, textarea {
 		width: 95%;
 		margin: 0 auto;
 		overflow: hidden;
-		padding: 0 0 15em 0;
+		padding: 0 0 3em 0;
 	}
 
 		#banner h2 {
@@ -1827,7 +1866,7 @@ input, select, textarea {
 			font-size: 2.35em;
 			font-weight: 700;
 			line-height: 1.3em;
-			margin: 0 0 1.5em 0;
+			margin: 0 0 1em 0;
 		}
 
 			#banner h2 strong {
@@ -1876,12 +1915,14 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		background: url("../../images/cropped-naloma_bg2.png");
+		/* background: url("../../images/cropped-naloma_bg2.png"); */
+		background: url("../../images/naloma-bg-cropped-1.png");
+		/* background-blend-mode: lighten; */
 		/* background-position: top left, center center;
 		background-size: auto, cover; */
 		background-position: top left;
 		background-size: cover;
-		padding: 3em 0;
+		/* padding: 3em 0; */
 	}
 
 	#main-wrapper {
@@ -2317,7 +2358,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 0 0 4em 0;
+				padding: 1em 0 4em 0;
 			}
 
 				#banner br {
@@ -2436,7 +2477,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 110px 10px 10px 10px;
+				padding: 30px 10px 10px 10px;
 			}
 
 				#banner h2 {
