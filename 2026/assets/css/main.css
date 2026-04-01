@@ -136,6 +136,44 @@ input, select, textarea {
     animation: glow-move 1s linear infinite;
 }
 
+/* ========= keynote ========= */
+.keynote-container {
+	display: flex;
+	flex-direction: column; /* Stack keynotes vertically */
+	gap: 20px; /* Space between keynotes */
+	max-width: 400px; /* Adjust as needed */
+	margin: 0 auto;
+}
+
+.keynote {
+	display: flex;
+	align-items: center; /* Align image and text */
+	gap: 15px; /* Space between image and text */
+}
+
+.keynote img {
+	width: 120px; /* Adjust image size */
+	height: 120px;
+	/* padding: 0px; */
+	border-radius: 20%; /* Make images circular */
+	object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.keynote-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.keynote-name {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.keynote-affiliation {
+	font-size: 1em;
+	color: gray;
+}
+
 /* ===================================================== */
 
 /* Basic */
@@ -1299,7 +1337,7 @@ input, select, textarea {
 	}
 
 		header h2, header h3 {
-			margin: 0 0 0.25em 0;
+			margin: 0 0 1em 0;
 		}
 
 		header p {
