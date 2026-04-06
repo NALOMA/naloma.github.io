@@ -100,8 +100,8 @@ input, select, textarea {
 
 .text-box {
 	text-align: left;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .hidden-text {
@@ -127,13 +127,16 @@ input, select, textarea {
 
 .moving-glow {
     position: relative;
-    color: white;
+	font-weight: 700;
+    text-decoration: underline;
+	text-shadow: none;
+    /* color: white; */
     background: linear-gradient(90deg, transparent, blue, transparent);
     background-size: 200% 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: glow-move 1s linear infinite;
+    animation: glow-move 1.5s linear infinite;
 }
 
 /* ========= keynote ========= */
