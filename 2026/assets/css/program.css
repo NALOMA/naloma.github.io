@@ -1,0 +1,828 @@
+/* ============================================================
+   NALOMA PROGRAM
+   ============================================================ */
+
+.naloma-program {
+	--naloma-blue: #4091bf;
+	--naloma-brown: #764c29;
+	--naloma-dark: #404248;
+	--naloma-gray: #747a83;
+	--naloma-border: #dfe3e7;
+
+	max-width: 950px;
+	margin: 0 auto;
+
+	text-align: left;
+}
+
+
+/* ============================================================
+   PROGRAM HEADING + PROCEEDINGS LINK
+   ============================================================ */
+
+.program-heading-wrap {
+	max-width: 950px;
+	margin: 0 auto 1.1em auto;
+}
+
+
+.program-heading-title {
+	margin: 0 !important;
+	padding: 0 !important;
+
+	text-align: center;
+}
+
+
+/*
+ * This element is centered normally.
+ * The proceedings link is positioned relative to it,
+ * but does not occupy layout space.
+ */
+
+.program-heading-center {
+	position: relative;
+
+	display: inline-block;
+}
+
+
+.program-heading-center h2 {
+	margin: 0 !important;
+}
+
+
+/* Proceedings link beside the title */
+
+.program-heading-center .program-proceedings-link {
+	position: absolute;
+
+	left: calc(100% + 0.85em);
+	top: 50%;
+
+	transform: translateY(-50%);
+
+	display: inline-block;
+
+	margin: 0;
+	padding: 0.18em 0.55em;
+
+	white-space: nowrap;
+
+	background: #ffffff !important;
+	background-image: none !important;
+
+	border: 1px solid #4091bf !important;
+	border-radius: 4px !important;
+
+	box-shadow: none !important;
+	text-shadow: none !important;
+
+	color: #4091bf !important;
+
+	/*
+	 * Approximately 1.5 times the previous 0.82em size.
+	 */
+	font-size: 1.23em;
+	font-weight: 700;
+	line-height: 1.3;
+
+	letter-spacing: normal !important;
+	text-transform: none !important;
+
+	text-decoration: none !important;
+
+	transition:
+		background 0.15s ease,
+		color 0.15s ease;
+}
+
+
+.program-heading-center .program-proceedings-link:hover {
+	background: #4091bf !important;
+
+	color: #ffffff !important;
+
+	box-shadow: none !important;
+
+	transform: translateY(-50%);
+}
+
+
+/* Mobile: put the link below the title to prevent overflow */
+
+@media screen and (max-width: 736px) {
+
+	.program-heading-center .program-proceedings-link {
+		position: static;
+
+		display: table;
+
+		margin: 0.55em auto 0 auto;
+
+		transform: none;
+
+		font-size: 0.95em;
+	}
+
+
+	.program-heading-center .program-proceedings-link:hover {
+		transform: none;
+	}
+
+}
+
+/* ============================================================
+   LEGEND
+   ============================================================ */
+
+.program-legend {
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: center;
+	align-items: center;
+
+	gap: 0.6em 1.2em;
+
+	margin: -0.4em 0 1.8em 0;
+
+	color: #666b72;
+
+	font-size: 0.78em;
+}
+
+
+.program-legend-item {
+	display: inline-flex;
+
+	align-items: center;
+
+	gap: 0.4em;
+}
+
+
+.program-legend-color {
+	display: inline-block;
+
+	width: 0.75em;
+	height: 0.75em;
+
+	border-radius: 2px;
+}
+
+
+.program-legend-keynote {
+	background: #764c29;
+}
+
+
+.program-legend-paper {
+	background: #4091bf;
+}
+
+
+.program-legend-nonarchival {
+	background: #747a83;
+}
+
+
+/* ============================================================
+   DAYS
+   ============================================================ */
+
+.program-day {
+	margin: 0 0 2em 0;
+}
+
+
+.program-day + .program-day {
+	margin-top: 2.2em;
+}
+
+
+.naloma-program .program-day-title {
+	display: flex;
+
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 1em;
+
+	margin: 0 0 0.7em 5.65rem !important;
+
+	padding: 0.45em 0.75em;
+
+	background: #c9c9c9;
+
+	border: 1px solid #dfe3e7;
+	/* border-left: 4px solid var(--naloma-brown); */
+	border-radius: 5px;
+
+	color: var(--naloma-dark);
+
+	font-size: 1.05em;
+	font-weight: 800;
+	line-height: 1.3;
+
+	text-transform: none !important;
+	letter-spacing: 0.05em !important;
+}
+
+
+.program-date {
+	color: var(--naloma-dark);
+
+	font-size: 0.83em;
+	font-weight: 600;
+}
+
+
+/* ============================================================
+   PROGRAM ROW
+   ============================================================ */
+
+.program-entry {
+	display: grid;
+
+	grid-template-columns:
+		4.8rem
+		minmax(0, 1fr);
+
+	column-gap: 0.85rem;
+
+	align-items: stretch;
+
+	margin: 0.48em 0;
+}
+
+
+/* ============================================================
+   TIME
+   ============================================================ */
+
+.program-time {
+	padding-top: 0.68em;
+
+	color: var(--naloma-dark);
+
+	font-size: 0.82em;
+	font-weight: 800;
+	line-height: 1;
+
+	font-variant-numeric: tabular-nums;
+}
+
+
+/*
+ * Normal entry:
+ * only show the starting time.
+ */
+
+.program-time--start-only {
+	display: flex;
+
+	justify-content: center;
+	align-items: flex-start;
+}
+
+
+/*
+ * Last entry of a day:
+ * starting time at the top,
+ * final end time at the bottom.
+ */
+
+.program-time--last {
+	display: grid;
+
+	grid-template-rows:
+		auto
+		minmax(0.5em, 1fr)
+		auto;
+
+	justify-items: center;
+
+	padding-bottom: 0.65em;
+}
+
+
+.program-time time {
+	display: block;
+}
+
+
+.program-time-line {
+	display: block;
+
+	width: 2px;
+
+	min-height: 0.7em;
+
+	margin: 0.35em 0;
+
+	background: #ccd1d6;
+
+	border-radius: 2px;
+}
+
+
+/* ============================================================
+   PROGRAM CARDS
+   ============================================================ */
+
+.program-card {
+	--card-accent: var(--naloma-blue);
+	--card-tint: #eef7fc;
+
+	position: relative;
+
+	overflow: hidden;
+
+	background:
+		linear-gradient(
+			90deg,
+			var(--card-tint) 0,
+			#ffffff 45%
+		);
+
+	border: 1px solid var(--naloma-border);
+
+	border-left:
+		5px solid
+		var(--card-accent);
+
+	border-radius: 7px;
+
+	box-shadow:
+		0 1px 3px
+		rgba(0, 0, 0, 0.06);
+
+	transition:
+		box-shadow 0.2s ease,
+		transform 0.2s ease;
+}
+
+
+/* Archival paper */
+
+.program-card--paper {
+	--card-accent: #4091bf;
+	--card-tint: #eef7fc;
+}
+
+
+/* Keynote / special talk */
+
+.program-card--keynote {
+	--card-accent: #764c29;
+	--card-tint: #efe0d3;
+
+	border-left-width: 7px;
+	border-top-color: #c8aa91;
+	border-bottom-color: #c8aa91;
+	border-right-color: #d8c3b1;
+
+	box-shadow:
+		0 3px 9px rgba(118, 76, 41, 0.18);
+}
+
+
+.program-card--keynote .program-title {
+	font-size: 1.3em !important;
+	font-weight: 800;
+}
+
+
+.program-card--keynote .program-authors {
+	color: #5f4938;
+	font-size: 1.15em !important;
+	font-weight: 600 !important;
+}
+
+
+.program-card--keynote:hover {
+	box-shadow:
+		0 5px 14px rgba(118, 76, 41, 0.24);
+}
+
+
+/* Non-archival paper */
+
+.program-card--nonarchival {
+	--card-accent: #747a83;
+	--card-tint: #f3f4f5;
+}
+
+
+/* Opening and closing remarks */
+
+.program-card--remarks {
+	--card-accent: #b3b8be;
+	--card-tint: #fafafa;
+	/* Remove the thick colored left border */
+	border-left: 1px solid var(--naloma-border);
+}
+
+
+/* Slight hover effect */
+
+.program-card:not(.program-card--remarks):hover {
+	box-shadow:
+		0 3px 9px
+		rgba(0, 0, 0, 0.10);
+}
+
+
+/* ============================================================
+   CLICKABLE CARD HEADER
+   ============================================================ */
+
+.naloma-program .program-card-toggle {
+	display: flex;
+
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 1.2em;
+
+	width: 100%;
+
+	margin: 0;
+
+	padding: 0.62em 0.85em;
+
+	color: inherit;
+
+	text-align: left;
+
+	cursor: pointer;
+
+	outline: none;
+
+	transition:
+		background 0.15s ease;
+}
+
+
+.naloma-program .program-card-toggle:hover {
+	background:
+		rgba(255, 255, 255, 0.35);
+}
+
+
+.naloma-program .program-card-toggle:focus-visible {
+	outline:
+		2px solid
+		var(--card-accent);
+
+	outline-offset: -3px;
+}
+
+
+/* ============================================================
+   OPENING / CLOSING REMARKS
+   ============================================================ */
+
+.program-card-static {
+	padding: 0.65em 0.85em;
+}
+
+
+/* ============================================================
+   MAIN CARD CONTENT
+   ============================================================ */
+
+.program-card-main {
+	flex: 1;
+
+	min-width: 0;
+}
+
+
+/* ============================================================
+   TITLE
+   ============================================================ */
+
+/*
+ * The title and "Paper" link are inline.
+ *
+ * This means the link appears immediately after the title,
+ * including after the final line when a long title wraps.
+ */
+
+.program-title-line {
+	display: block;
+
+	line-height: 1.32;
+}
+
+
+.naloma-program .program-title {
+	display: inline;
+
+	margin: 0 !important;
+
+	color: var(--naloma-dark);
+
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1.32;
+
+	letter-spacing: 0 !important;
+	text-transform: none !important;
+}
+
+
+/* ============================================================
+   AUTHORS
+   ============================================================ */
+
+.program-authors {
+	margin-top: 0.15em;
+
+	color: #686e77;
+
+	font-size: 0.86em;
+	font-weight: 400;
+	line-height: 1.35;
+}
+
+
+/* ============================================================
+   PAPER LINK
+   ============================================================ */
+
+.program-paper-link {
+	display: inline-block;
+
+	margin-left: 0.45em;
+
+	padding:
+		0.12em
+		0.46em;
+
+	white-space: nowrap;
+
+	vertical-align: 0.08em;
+
+	background: #ffffff;
+
+	border:
+		1px solid
+		var(--card-accent);
+
+	border-radius: 4px;
+
+	color:
+		var(--card-accent) !important;
+
+	font-size: 0.70em;
+	font-weight: 700;
+	line-height: 1.35;
+
+	text-decoration: none !important;
+
+	transition:
+		background 0.15s ease,
+		color 0.15s ease;
+}
+
+
+.program-paper-link:hover {
+	background:
+		var(--card-accent);
+
+	color:
+		#ffffff !important;
+}
+
+
+/* ============================================================
+   EXPAND / COLLAPSE ARROW
+   ============================================================ */
+
+.program-chevron {
+	flex: 0 0 auto;
+
+	width: 0.62em;
+	height: 0.62em;
+
+	margin:
+		0
+		0.22em
+		0.22em
+		0.4em;
+
+	border-right:
+		2px solid
+		var(--card-accent);
+
+	border-bottom:
+		2px solid
+		var(--card-accent);
+
+	transform:
+		rotate(45deg);
+
+	transition:
+		transform 0.30s ease;
+}
+
+
+/*
+ * Rotate arrow when abstract is open.
+ */
+
+.program-card.is-open .program-chevron {
+	transform:
+		rotate(225deg);
+}
+
+
+/* ============================================================
+   ABSTRACT EXPAND / COLLAPSE
+   ============================================================ */
+
+/*
+ * Do not use display:none here.
+ *
+ * 0fr -> 1fr allows the abstract to expand/collapse smoothly.
+ */
+
+.naloma-program .program-abstract {
+	display: grid;
+
+	grid-template-rows: 0fr;
+
+	opacity: 0;
+
+	transition:
+		grid-template-rows 0.30s ease,
+		opacity 0.22s ease;
+}
+
+
+.naloma-program .program-card.is-open .program-abstract {
+	grid-template-rows: 1fr;
+
+	opacity: 1;
+}
+
+
+/*
+ * Necessary for the grid 0fr -> 1fr transition.
+ */
+
+.naloma-program .program-abstract-inner {
+	overflow: hidden;
+
+	min-height: 0;
+}
+
+
+/* ============================================================
+   ABSTRACT CONTENT
+   ============================================================ */
+
+.naloma-program .program-abstract-content {
+	margin:
+		0
+		0.85em;
+
+	padding:
+		0.65em
+		0
+		0.75em
+		0;
+
+	border-top:
+		1px solid
+		rgba(64, 66, 72, 0.12);
+
+	color: #5e646d;
+
+	font-size: 0.86em;
+	line-height: 1.55;
+}
+
+
+.naloma-program .program-abstract-content strong {
+	color: var(--naloma-dark);
+}
+
+
+.naloma-program .program-abstract-content p,
+.naloma-program .program-abstract-content .program-abstract-text {
+	margin:
+		0.15em
+		0
+		0
+		0 !important;
+}
+
+
+
+
+
+
+/* ============================================================
+   TABLET / MOBILE
+   ============================================================ */
+
+@media screen and (max-width: 736px) {
+
+	.naloma-program {
+		width: 100%;
+	}
+
+
+	.program-entry {
+		grid-template-columns:
+			3.6rem
+			minmax(0, 1fr);
+
+		column-gap: 0.55rem;
+	}
+
+
+	.program-time {
+		font-size: 0.74em;
+	}
+
+
+	.naloma-program .program-day-title {
+		margin-left:
+			4.15rem !important;
+
+		font-size:
+			0.95em !important;
+	}
+
+
+	.program-date {
+		font-size: 0.78em;
+	}
+
+
+	.naloma-program .program-title {
+		font-size:
+			0.94em !important;
+	}
+
+
+	.program-authors {
+		font-size: 0.81em;
+	}
+
+
+	.naloma-program .program-card-toggle,
+	.program-card-static {
+		padding:
+			0.58em
+			0.7em;
+	}
+
+
+	.naloma-program .program-abstract-content {
+		margin-left: 0.7em;
+		margin-right: 0.7em;
+	}
+
+
+	.program-paper-link {
+		font-size: 0.68em;
+
+		margin-left: 0.35em;
+	}
+
+}
+
+
+/* ============================================================
+   SMALL PHONES
+   ============================================================ */
+
+@media screen and (max-width: 480px) {
+
+	.program-legend {
+		justify-content: flex-start;
+
+		margin-left: 4.15rem;
+	}
+
+
+	.naloma-program .program-day-title {
+		flex-direction: column;
+
+		align-items: flex-start;
+
+		gap: 0.03em;
+	}
+
+
+	.program-chevron {
+		margin-left: 0.1em;
+	}
+
+}

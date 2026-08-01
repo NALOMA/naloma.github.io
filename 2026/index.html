@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/program.css" />
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -29,8 +30,9 @@
 										<nav id="nav">
 											<ul>
 												<li><a href="index.html">Home</a></li>
-												<li><a href="#call-for-papers">Call for papers</a></li>
+												<li><a href="#program">Program</a></li>
 												<li><a href="#keynotes">Keynotes</a></li>
+												<li><a href="#call-for-papers">Call for papers</a></li>
 												<li><a href="#important-dates">Important dates</a></li>
 												<li>
 													<a href="#">Archives</a>
@@ -106,6 +108,60 @@
 						<!-- Feature 2 -->
 							<section class="container box feature2">
 								<div class="row">
+									<div id="program" class="col-12">
+
+									</div>
+								</div>
+							</section>
+
+						</div>
+					</div>
+					<div class="wrapper style3">
+						<div class="inner">
+							<!-- Feature 2 -->
+							<section class="container box feature2">
+								<div class="row">
+									<div id="keynotes" class="col-12">
+										<header class="first">
+											<h2>Keynotes</h2>
+											<div class="text-box" style="display: flex; justify-content: center;">
+												<div id="keynote-list" class="keynote-container">
+													<div class="keynote">
+														<img src="images/bernardi.jpg" alt="Raffaella Bernardi">
+														<div class="keynote-info">
+															<div class="keynote-name">Raffaella Bernardi</div>
+															<div class="keynote-affiliation">Free University of Bozen-Bolzano</div>
+														</div>
+													</div>
+
+													<div class="keynote">
+														<img src="images/boleda.jpg" alt="Gemma Boleda">
+														<div class="keynote-info">
+															<div class="keynote-name">Gemma Boleda</div>
+															<div class="keynote-affiliation">Universitat Pompeu Fabra</div>
+														</div>
+													</div>
+
+													<div class="keynote">
+														<img src="images/lango.png" alt="Mateusz Lango">
+														<div class="keynote-info">
+															<div class="keynote-name">Mateusz Lango</div>
+															<div class="keynote-affiliation">Charles University</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</header>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="wrapper style3">
+						<div class="inner">
+						<!-- Feature 2 -->
+							<section class="container box feature2">
+								<div class="row">
 									<div id="call-for-papers" class="col-12">
 										<header class="first">
 											<h2>Call for Papers</h2>
@@ -164,48 +220,6 @@
 
 											<div class="text-box">
 												Accepted papers and extended abstracts are expected to be presented at the workshop, and at least one author must <b>register</b> for <a href="https://2026.esslli.eu/">ESSLLI 2026</a>.</div>
-											</div>
-										</header>
-									</div>
-								</div>
-							</section>
-
-						</div>
-					</div>
-					<div class="wrapper style3">
-						<div class="inner">
-							<!-- Feature 2 -->
-							<section class="container box feature2">
-								<div class="row">
-									<div id="keynotes" class="col-12">
-										<header class="first">
-											<h2>Keynotes</h2>
-											<div class="text-box" style="display: flex; justify-content: center;">
-												<div id="keynote-list" class="keynote-container">
-													<div class="keynote">
-														<img src="images/bernardi.jpg" alt="Raffaella Bernardi">
-														<div class="keynote-info">
-															<div class="keynote-name">Raffaella Bernardi</div>
-															<div class="keynote-affiliation">Free University of Bozen-Bolzano</div>
-														</div>
-													</div>
-
-													<div class="keynote">
-														<img src="images/boleda.jpg" alt="Gemma Boleda">
-														<div class="keynote-info">
-															<div class="keynote-name">Gemma Boleda</div>
-															<div class="keynote-affiliation">Universitat Pompeu Fabra</div>
-														</div>
-													</div>
-
-													<div class="keynote">
-														<img src="images/lango.png" alt="Mateusz Lango">
-														<div class="keynote-info">
-															<div class="keynote-name">Mateusz Lango</div>
-															<div class="keynote-affiliation">Charles University</div>
-														</div>
-													</div>
-												</div>
 											</div>
 										</header>
 									</div>
@@ -315,12 +329,21 @@
 		</div>
 
 		<!-- Scripts -->
+
+			<script>
+			fetch('program.html')
+			.then(response => response.text())
+			.then(text => {
+				document.getElementById('program').innerHTML = text;
+			});
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/program.js"></script>
 			<script>
 				// Shuffle the list when the page loads
 				// window.onload = shufflePC;
@@ -329,8 +352,6 @@
 				document.addEventListener("DOMContentLoaded", shufflePC());
 				document.addEventListener("DOMContentLoaded", shuffleKeynote(3));
 			</script>
-
 	</body>
-
 </html>
 

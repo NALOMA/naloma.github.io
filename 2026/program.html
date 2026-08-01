@@ -1,0 +1,1119 @@
+<!-- =========================================================
+     PROGRAM
+     ========================================================= -->
+                    <div class="program-heading-wrap">
+
+                        <header class="first program-heading-title">
+
+                            <div class="program-heading-center">
+
+                                <h2>Program</h2>
+
+                                <a href="https://aclanthology.org/volumes/2026.naloma-1/"
+                                class="program-proceedings-link"
+                                target="_blank"
+                                rel="noopener">
+                                    Workshop proceedings ↗
+                                </a>
+
+                            </div>
+
+                        </header>
+
+                    </div>
+
+
+					<div class="naloma-program">
+
+						<!-- Legend -->
+						<div class="program-legend">
+
+							<span class="program-legend-item">
+								<span class="program-legend-color program-legend-keynote"></span>
+								Keynote
+							</span>
+
+							<span class="program-legend-item">
+								<span class="program-legend-color program-legend-paper"></span>
+								Archival paper
+							</span>
+
+							<span class="program-legend-item">
+								<span class="program-legend-color program-legend-nonarchival"></span>
+								Non-archival
+							</span>
+
+						</div>
+
+
+						<!-- =====================================================
+						     MONDAY
+						     ===================================================== -->
+
+						<section class="program-day">
+
+							<h3 class="program-day-title">
+								<span>Monday</span>
+								<span class="program-date">August 3, 2026</span>
+							</h3>
+
+
+							<!-- Opening Remarks -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--start-only">
+									<time>14:00</time>
+								</div>
+
+								<div class="program-card program-card--remarks">
+
+									<div class="program-card-static">
+										<h4 class="program-title">
+											Opening Remarks
+										</h4>
+									</div>
+
+								</div>
+
+							</div>
+
+
+							<!-- Raffaella Bernardi -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--start-only">
+									<time>14:05</time>
+								</div>
+
+								<article class="program-card program-card--keynote">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-bernardi">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+												<h4 class="program-title">
+													Reasoning in Language Models:
+													Insights from Cognitive Science
+												</h4>
+											</div>
+
+											<div class="program-authors">
+												Raffaella Bernardi
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-bernardi">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+Coming from the ESSLLI Logic &amp; Language tradition, I view reasoning as a core component
+of language: language is the vehicle through which we express our otherwise hidden reasoning processes.
+Large Language Models have reached remarkable levels of linguistic proficiency. The question now is
+not only what they say, but what lies behind their linguistic expressions.
+Reasoning is multifaceted. We deduce conclusions from premises, induce general rules from examples,
+ask questions to acquire information that is essential for solving a problem, and revise our beliefs when
+new evidence becomes available. Consequently, the question we face is equally multifaceted: which
+reasoning abilities have Large Language Models actually acquired, if any, and how can we determine
+whether they genuinely reason?
+In this talk, I will present a series of recent studies from my research group investigating deductive,
+inductive, and information-seeking reasoning in LLMs. I will discuss the complementary evaluation
+methodologies we adopted, combining behavioral analyses with investigations of the models' internal
+reasoning processes. Finally, I will argue that understanding LLM reasoning requires moving beyond
+static reasoning benchmarks toward dynamic, interactive, multi-turn settings. To support this claim, I
+will draw on experimental paradigms that have long been used in cognitive science to study human reasoning,
+showing how they provide powerful tools for investigating the interplay between language and
+reasoning in modern language models.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+
+							<!-- Discovering New Theorems -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--last">
+									<time>15:05</time>
+									<span class="program-time-line"></span>
+									<time>15:30</time>
+								</div>
+
+								<article class="program-card program-card--paper">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-kasaura">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+
+												<h4 class="program-title">
+													Discovering New Theorems via LLMs with
+													In-Context Proof Learning in Lean
+												</h4>
+
+												<a class="program-paper-link"
+												   href="https://aclanthology.org/2026.naloma-1.5/"
+												   target="_blank"
+												   rel="noopener">
+													Paper ↗
+												</a>
+
+											</div>
+
+											<div class="program-authors">
+												Kazumi Kasaura, Naoto Onda, Yuta Oriike,
+												Masaya Taniguchi, Akiyoshi Sannai and Sho Sonoda
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-kasaura">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+Large Language Models (LLMs) have demonstrated significant promise in formal theorem proving.
+In this study, we investigate the ability of LLMs to discover novel theorems and produce verified proofs.
+We propose a pipeline called Conjecturing-Proving Loop (CPL), which iteratively generates mathematical
+conjectures and attempts to prove them in Lean 4. A key feature of CPL is that each iteration conditions
+the LLM on previously generated theorems and their formal proofs, enabling parameter-free improvement of
+proof strategies via in-context learning. We provide both theoretical and experimental evidence that CPL
+increases the discovery rate of hard-to-prove theorems compared to frameworks that generate statements
+and proofs simultaneously. Moreover, our experiments show that reusing the LLM's own formally verified
+outputs as context consistently improves subsequent proof success, demonstrating the effectiveness of
+self-generated in-context learning for neural theorem proving.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+						</section>
+
+
+						<!-- =====================================================
+						     TUESDAY
+						     ===================================================== -->
+
+						<section class="program-day">
+
+							<h3 class="program-day-title">
+								<span>Tuesday</span>
+								<span class="program-date">August 4, 2026</span>
+							</h3>
+
+
+							<!-- Neural DTS -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--start-only">
+									<time>14:00</time>
+								</div>
+
+								<article class="program-card program-card--paper">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-neural-dts">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+
+												<h4 class="program-title">
+													Neural DTS: Integrating Hyperbolic Classifiers
+													into Natural Language Inference Systems
+												</h4>
+
+												<a class="program-paper-link"
+												   href="https://aclanthology.org/2026.naloma-1.2/"
+												   target="_blank"
+												   rel="noopener">
+													Paper ↗
+												</a>
+
+											</div>
+
+											<div class="program-authors">
+												Honoka Kobayashi, Hinari Daido and Daisuke Bekki
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-neural-dts">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+Dependent Type Semantics (DTS) provides a highly rigorous framework for natural language inference (NLI),
+yet its scalability is severely bottlenecked by the need for manually created world knowledge.
+To overcome this knowledge acquisition bottleneck, we present a novel neuro-symbolic NLI system that
+integrates Hyperbolic Entailment Cones for automated conceptual hierarchy discovery. By exploiting the
+geometric properties of hyperbolic space, our model efficiently learns lexical entailment relations and
+dynamically injects them as logical axioms during the DTS proof-search process. Evaluations on our
+constructed diagnostic dataset show that our hybrid approach broadens the coverage of complex lexical
+variations and paraphrases without manual engineering.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+
+							<!-- Visual Question Answering -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--start-only">
+									<time>14:25</time>
+								</div>
+
+								<article class="program-card program-card--paper">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-vqa">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+
+												<h4 class="program-title">
+													Visual Question Answering and the relation
+													between language, perception and the world
+												</h4>
+
+												<a class="program-paper-link"
+												   href="https://aclanthology.org/2026.naloma-1.8/"
+												   target="_blank"
+												   rel="noopener">
+													Paper ↗
+												</a>
+
+											</div>
+
+											<div class="program-authors">
+												Staffan Larsson, Bill Noble and Robin Cooper
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-vqa">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+We outline a general account of VQA using a perception-oriented formal semantic framework.
+We believe that it is instructive to describe VQA not only in terms of an engineering challenge,
+but also as a linguistically and philosophically relevant task that can help us better understand
+the relation between language, perception and the world. Specifically, we will argue that linguistic
+meaning helps us structure our takes on visual scenes, enabling us to classify situations so that
+we e.g. can answer questions and determine whether a sentence correctly describes a scene.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+
+							<!-- Negation in Reasoning Traces -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--last">
+									<time>14:50</time>
+									<span class="program-time-line"></span>
+									<time>15:15</time>
+								</div>
+
+								<article class="program-card program-card--paper">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-negation-traces">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+
+												<h4 class="program-title">
+													Negation in Reasoning Traces:
+													Interpretable Signals of Correctness and Provenance
+												</h4>
+
+												<a class="program-paper-link"
+												   href="https://aclanthology.org/2026.naloma-1.4/"
+												   target="_blank"
+												   rel="noopener">
+													Paper ↗
+												</a>
+
+											</div>
+
+											<div class="program-authors">
+												Leon Lukas Hammerla and Alexander Mehler
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-negation-traces">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+Chain-of-thought (CoT) reasoning is widely used in large language models (LLMs), but the resulting reasoning traces
+remain underexplored. We study these traces through the lens of discourse-level negation. Specifically, we distinguish
+between corrective negation, which rejects a prior reasoning step, and refining negation, which narrows or qualifies it,
+and introduce metrics to quantify their use in human- and LLM-authored reasoning traces. Across multiple benchmarks,
+we find that negation occurs much more frequently in intermediate reasoning traces than in final response texts.
+We then test whether negation-based features provide predictive and descriptive signal for correctness, model identity,
+and human-vs.-LLM authorship. For correctness prediction, negation-based features consistently outperform
+simple structural baselines and in several settings add complementary signal to embedding-based representations,
+although embeddings remain stronger overall. In a controlled comparison on correct human and LLM traces from the same dataset,
+our strongest results arise in human-vs.-LLM classification, where negation features outperform both structural and embedding baselines.
+Overall, these findings position discourse-level negation as an interpretable feature for reasoning-trace analysis,
+with especially strong utility for provenance-related classification and modest but consistent value for correctness prediction.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+						</section>
+
+
+						<!-- =====================================================
+						     WEDNESDAY
+						     ===================================================== -->
+
+						<section class="program-day">
+
+							<h3 class="program-day-title">
+								<span>Wednesday</span>
+								<span class="program-date">August 5, 2026</span>
+							</h3>
+
+
+							<!-- Gemma Boleda -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--start-only">
+									<time>14:00</time>
+								</div>
+
+								<article class="program-card program-card--keynote">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-boleda">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+												<h4 class="program-title">
+													LLMs as a Synthesis between Symbolic and
+													Distributed Approaches to Language
+												</h4>
+											</div>
+
+											<div class="program-authors">
+												Gemma Boleda
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-boleda">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+Since the middle of the 20th century, a fierce battle is being fought between symbolic and
+distributed approaches to language and cognition. In this talk, I reflect on deep learning models of
+language in the context of this broader discussion, and consider the possibility that LLMs represent a
+synthesis between the two antagonistic traditions. This possibility is supported by the fact that deep
+learning architectures allow for both distributed/continuous/fuzzy and symbolic/discrete/categorical-like
+representations and processing; what is left to see is how modern language models make use of this
+flexibility. I will discuss recent research in interpretability that suggests that grammar is processed in a
+near-symbolic fashion in modern LLMs, while lexical semantics receives a much more distributed treatment;
+and I will also discuss work in progress in our group that is starting to probe this view. If time
+allows, I will end the talk by summarizing a recent systematic review of interpretability work on syntactic
+knowledge in LLMs.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+
+							<!-- Systematicity in Negation -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--last">
+									<time>15:00</time>
+									<span class="program-time-line"></span>
+									<time>15:25</time>
+								</div>
+
+								<article class="program-card program-card--paper">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-systematicity">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+
+												<h4 class="program-title">
+													Revisiting the Systematicity in Negation
+													in the Era of In-Context Learning
+												</h4>
+
+												<a class="program-paper-link"
+												   href="https://aclanthology.org/2026.naloma-1.1/"
+												   target="_blank"
+												   rel="noopener">
+													Paper ↗
+												</a>
+
+											</div>
+
+											<div class="program-authors">
+												Hitomi Yanaka and Taisei Yamamoto
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-systematicity">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+Understanding the meaning of negated sentences remains one of the challenges for language models
+even in the era of large language models (LLMs). We analyze systematicity regarding LLM understanding
+of negation from two perspectives: behavioral systematicity and representational systematicity.
+For behavioral systematicity, we confirm that through demonstrations and in-context learning,
+LLMs can recognize negation expressions and negation scope within sentences to some extent,
+but they fail to achieve perfect performance. In particular, the difficulty of the negation scope
+recognition for models varies depending on the output format. For representational systematicity,
+we analyze the extent to which LLMs can construct function vectors related to the tasks necessary
+for understanding negation from in-context examples. The experiments suggest that while models
+can compose the function vectors for negation tasks, extracting the function vector for recognizing
+scope is more challenging.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+						</section>
+
+
+						<!-- =====================================================
+						     THURSDAY
+						     ===================================================== -->
+
+						<section class="program-day">
+
+							<h3 class="program-day-title">
+								<span>Thursday</span>
+								<span class="program-date">August 6, 2026</span>
+							</h3>
+
+
+							<!-- Lost in Transfer -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--start-only">
+									<time>14:00</time>
+								</div>
+
+								<article class="program-card program-card--nonarchival">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-lost-transfer">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+												<h4 class="program-title">
+													Lost in Transfer: Argument Mining with Large
+													Language Models — From In-Context Learning
+													to Policy Optimization
+												</h4>
+											</div>
+
+											<div class="program-authors">
+												Fatma-Zohra Rezkellah, Reto Gubelmann
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-lost-transfer">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+ Argument Mining (AM), the automatic extraction of argumentative structure as directed graphs of claims
+ and inferential relations, is a natural testbed for evaluating whether large language models (LLMs)
+ capture the kind of structured inferential reasoning studied in natural logic. We present a unified
+ multi-paradigm benchmark evaluating four approaches of increasing training complexity:
+ discriminative BERT-family models, In-Context Learning (ICL), Supervised Fine-Tuning (SFT), and
+ Reinforcement Fine-Tuning (RFT) via verifiable rewards (GRPO), across three heterogeneous corpora using F1F1,
+ a joint metric requiring accurate span detection and relation classification simultaneously.
+ SFT substantially improves over prompting but still falls short of the discriminative baseline,
+ with edge prediction as the main bottleneck. Cold-start RFT fails via reward hacking: models produce
+ structurally valid but semantically empty graphs. Counterintuitively, warm-start RFT underperforms cold-start.
+ Cross-domain generalization remains largely unsolved across paradigms, suggesting that models learn surface-level
+ argumentative conventions rather than transferable inferential structures.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+
+							<!-- Neural Wani -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--start-only">
+									<time>14:20</time>
+								</div>
+
+								<article class="program-card program-card--nonarchival">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-neural-wani">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+												<h4 class="program-title">
+													Neural Wani: Toward Accelerating the Automated
+													Theorem Prover wani for Dependent Type Theory
+												</h4>
+											</div>
+
+											<div class="program-authors">
+												Nanako Miyagawa, Hinari Daido, Daisuke Bekki
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-neural-wani">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+This paper proposes Neural Wani, an integration of a neural model into the automated theorem prover wani
+for Dependent Type Theory (DTT), aimed at accelerating proof search in natural language inference (NLI) pipelines.
+We implemented a lightweight LSTM-based model to predict the probability distribution of applicable inference rules
+and integrated it into wani's backward inference process. Evaluation using the JSeM dataset demonstrates that
+Neural Wani achieves a 1.41x speedup compared to the standard non-neural baseline. Although slight overhead
+is observed in simpler proofs, our results indicate that neuro-symbolic integration effectively guides search
+in complex DTT-based automated theorem proving.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+
+							<!-- Proof Search -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--start-only">
+									<time>14:40</time>
+								</div>
+
+								<article class="program-card program-card--paper">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-proof-search">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+
+												<h4 class="program-title">
+													Where Does Proof Search Spend Its Effort?
+													A Visualization and Profiling Tool for Formal NLI
+												</h4>
+
+												<a class="program-paper-link"
+												   href="https://aclanthology.org/2026.naloma-1.7/"
+												   target="_blank"
+												   rel="noopener">
+													Paper ↗
+												</a>
+
+											</div>
+
+											<div class="program-authors">
+												Koharu Saeki and Daisuke Bekki
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-proof-search">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+Recent work has substantially accelerated proof search in interactive theorem provers by integrating large language models,
+for both Lean and Coq. The natural language inference (NLI) counterpart lacks an analogous infrastructure: the behavior of
+dedicated DTT-based provers such as wani, inside the Japanese NLI system lightblue, is observable today only through verbose
+textual logs. This opacity blocks ML-acceleration efforts such as Neural Wani that need to know where the search spends
+its time and why it fails. We present a profiling and visualization tool for wani, implemented as a web-based component
+of the lightblue development environment, that exposes the proof search through a four-panel dashboard, Search Tree, Flame Graph,
+Rule Statistics, and Failure Analysis, each making one aspect of prover behavior directly inspectable. The tool provides
+the observability that ML-acceleration research in NLI currently needs but cannot easily obtain. It is released as open source
+software and provided as a Docker image.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+
+							<!-- Lawrence Moss -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--last">
+									<time>15:00</time>
+									<span class="program-time-line"></span>
+									<time>15:25</time>
+								</div>
+
+								<article class="program-card program-card--nonarchival">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-moss">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+												<h4 class="program-title">
+													Mathematical NLI: this should be easy!
+												</h4>
+											</div>
+
+											<div class="program-authors">
+												Lawrence S. Moss
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-moss">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+We ask whether contemporary LLMs are able to perform natural language inference (NLI) tasks on mathematical texts.
+We call this the Math NLI problem. We construct a corpus of Math NLI pairs whose premises are from extant mathematical text
+and whose hypotheses and gold labels were provided by people with experience in both research-level mathematics
+and also in the NLI field. We also investigate the quality of corpora using the same premises but whose hypotheses
+are provided by LLMs themselves. We not only investigate the performance but also the inter-group consistency
+of the diverse group of LLMs. We have both positive and negative findings. Among our positive findings:
+in some settings, using a majority vote of LLMs is approximately equivalent to using human-labeled data in the Math NLI area.
+On the negative side: LLMs still struggle with mathematical language. They occasionally fail at even basic inferences.
+Current models are not as prone to hypothesis-only "inference" in our data the way the previous generation had been.
+In addition to our findings, we also provide our corpora as data to support future work on Math NLI.
+In a different direction related to Math NLP, we ask about a problem that would seem to be easier than Math NLI,
+the problem of finding "mathematical words" in text. Again, it turns out to be harder than one would guess.
+But after working on this for some time, we are cautiously optimistic.<br/>
+Joint work with Valeria de Paiva, Qiyue Gao, Hai Hu, Pavel Kovalev, Yikang Liu, Zhiheng Qian, Saul Blanco,
+Soren de Haan, and Daniel Quigley
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+						</section>
+
+
+						<!-- =====================================================
+						     FRIDAY
+						     ===================================================== -->
+
+						<section class="program-day">
+
+							<h3 class="program-day-title">
+								<span>Friday</span>
+								<span class="program-date">August 7, 2026</span>
+							</h3>
+
+
+							<!-- Mateusz Lango -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--start-only">
+									<time>14:00</time>
+								</div>
+
+								<article class="program-card program-card--keynote">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-lango">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+												<h4 class="program-title">
+													Reasoning in Language Models:
+													Insights from Cognitive Science
+												</h4>
+											</div>
+
+											<div class="program-authors">
+												Mateusz Lango
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-lango">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+The fluency of modern large language models may lead to a perception that natural language generation
+is close to solved, yet a closer look reveals a recurring pattern of failure whenever a task
+requires exact, discrete fidelity to some underlying structure rather than fluent pattern completion.
+Reasoning that is straightforward in a single turn becomes surprisingly brittle across a dialogue; generation
+under explicit lexical or content constraints remains difficult to guarantee; and explanations produced by
+LLM-as-judge systems are frequently unfaithful to the actual decision process they claim to justify. I will
+argue that these three failures share a common shape: each is a case where an LLM must maintain or
+produce something exact and discrete, but is instead relying on an implicit, continuous representation not
+well suited to that job. This talk focuses on the third case - faithful explanation - and asks what happens
+when we make the intermediate representation explicit and symbolic, rather than leaving it to the model
+to reconstruct implicitly.
+I will present two lines of work built on this idea. The first constructs faithful explanations for image
+classifiers via a pipeline that separates the extraction of the (symbolic, verifiable) evidence behind a decision
+from its realization into fluent natural language, so that plausibility and faithfulness can be optimized
+somewhat independently. The second uses LLMs not to generate text directly, but to author interpretable,
+rule-based generation systems from scratch, producing data-to-text generators that are faithful and
+inspectable by construction rather than by post-hoc checking. Together, these case studies suggest a general
+recipe for faithful explanation: let neural models handle fluency and search, and let symbolic
+structure carry the guarantees. I will close with some open questions about how far this division of labor
+can be pushed, and what it would take to test the broader thesis motivating the talk.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+
+							<!-- Presburger Formula Generation -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--start-only">
+									<time>15:00</time>
+								</div>
+
+								<article class="program-card program-card--paper">
+
+									<div class="program-card-toggle"
+										 tabindex="0"
+										 aria-expanded="false"
+										 aria-controls="abstract-presburger">
+
+										<div class="program-card-main">
+
+											<div class="program-title-line">
+
+												<h4 class="program-title">
+													Semantic Distance for Presburger Formula Generation
+												</h4>
+
+												<a class="program-paper-link"
+												   href="https://aclanthology.org/2026.naloma-1.9/"
+												   target="_blank"
+												   rel="noopener">
+													Paper ↗
+												</a>
+
+											</div>
+
+											<div class="program-authors">
+												Masaya Taniguchi and Hitomi Yanaka
+											</div>
+
+										</div>
+
+										<span class="program-chevron"
+											  aria-hidden="true"></span>
+
+									</div>
+
+									<div class="program-abstract"
+										 id="abstract-presburger">
+
+										<div class="program-abstract-inner">
+
+											<div class="program-abstract-content">
+
+												<strong>Abstract</strong>
+
+												<p class="program-abstract-text">
+We study how to evaluate and train natural-language-to-formula generation when surface similarity is a poor proxy
+for semantic correctness. Focusing on translation into Presburger arithmetic, we introduce a geometric distance
+between formulas by viewing each formula as a set of integer lattice points and assigning an exponentially decaying
+weight to that set. The resulting distance yields finite comparisons even for infinite definable sets, can be computed
+through quantifier elimination, polyhedral decomposition, and lattice-point generating functions, and inherits
+the standard metric properties. We then use this distance in experiments on supervised fine-tuning and GRPO for translating
+arithmetic statements into formal formulas. The results show that a distance-aware reward substantially improves
+parsability and adjusted semantic quality compared with a string-similarity-only reward, while also revealing
+the remaining challenge of preserving quantifier structure.
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</article>
+
+							</div>
+
+
+							<!-- Closing Remarks -->
+							<div class="program-entry">
+
+								<div class="program-time program-time--last">
+									<time>15:25</time>
+									<span class="program-time-line"></span>
+									<time>15:30</time>
+								</div>
+
+								<div class="program-card program-card--remarks">
+
+									<div class="program-card-static">
+										<h4 class="program-title">
+											Closing Remarks
+										</h4>
+									</div>
+
+								</div>
+
+							</div>
+
+						</section>
+
+					</div>
