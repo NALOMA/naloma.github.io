@@ -190,6 +190,13 @@ reasoning in modern language models.
 													Paper ↗
 												</a>
 
+												<a class="program-paper-link"
+												   href="slides/taniguchi-talk.pdf"
+												   target="_blank"
+												   rel="noopener">
+													Slides ↗
+												</a>
+
 											</div>
 
 											<div class="program-authors">
@@ -705,14 +712,18 @@ scope is more challenging.
 
 											<div class="program-title-line">
 												<h4 class="program-title">
-													Lost in Transfer: Argument Mining with Large
-													Language Models — From In-Context Learning
-													to Policy Optimization
+													Lexical Entailments as Partial structured explanations for Textual Entailments
 												</h4>
+												<a class="program-paper-link"
+												   href="slides/abzianidze-talk.pdf"
+												   target="_blank"
+												   rel="noopener">
+													Slides ↗
+												</a>
 											</div>
 
 											<div class="program-authors">
-												Fatma-Zohra Rezkellah, Reto Gubelmann
+												Jorryt de Jong, Stefan Moraca, Ettore Cesari, Lasha Abzianidze
 											</div>
 
 										</div>
@@ -732,18 +743,26 @@ scope is more challenging.
 												<strong>Abstract</strong>
 
 												<p class="program-abstract-text">
- Argument Mining (AM), the automatic extraction of argumentative structure as directed graphs of claims
- and inferential relations, is a natural testbed for evaluating whether large language models (LLMs)
- capture the kind of structured inferential reasoning studied in natural logic. We present a unified
- multi-paradigm benchmark evaluating four approaches of increasing training complexity:
- discriminative BERT-family models, In-Context Learning (ICL), Supervised Fine-Tuning (SFT), and
- Reinforcement Fine-Tuning (RFT) via verifiable rewards (GRPO), across three heterogeneous corpora using F1F1,
- a joint metric requiring accurate span detection and relation classification simultaneously.
- SFT substantially improves over prompting but still falls short of the discriminative baseline,
- with edge prediction as the main bottleneck. Cold-start RFT fails via reward hacking: models produce
- structurally valid but semantically empty graphs. Counterintuitively, warm-start RFT underperforms cold-start.
- Cross-domain generalization remains largely unsolved across paradigms, suggesting that models learn surface-level
- argumentative conventions rather than transferable inferential structures.
+Large Language Models (LLMs) are highly capable of natural language reasoning
+and appear to store a great deal of lexical knowledge, but it is still unclear
+how much of this knowledge they actually use when reasoning, and whether they
+use it in the right way. On the other hand, logic-based Natural Language Inference (NLI)
+systems provide transparent and formally grounded reasoning, but they need to be supplied
+with rich lexical knowledge to prove inferences beyond purely logical ones.
+In this paper, we investigate whether LLMs can predict the correct amount of lexical knowledge
+for NLI problems, and whether this knowledge can help a logic-based NLI system
+find proofs for these problems. Our research focuses exclusively on structured
+lexical entailments (e.g., guitar ⊑ musical instrument) as a proxy of structured
+explanations to NLI problems with an entailment label. First, we curate
+a dataset for a new task of explaining sentential entailments with a set of
+lexical entailments. The dataset is used to intrinsically evaluate LLMs on
+generating structured lexical explanations. Then, we use NLI as an extrinsic
+evaluation in a simple neuro-symbolic setting, assessing whether LLMs can
+supply sufficient lexical relations to LangPro, a natural-logic theorem prover
+for natural language. The results show that the proposed task remains challenging
+even for hosted proprietary LLMs, and that their contribution to theorem proving
+is moderate: generated relations are often only partially sound and may be
+tailored to the specific NLI instance rather than representing generally valid lexical knowledge.
 												</p>
 
 											</div>
@@ -851,6 +870,13 @@ in complex DTT-based automated theorem proving.
 													Paper ↗
 												</a>
 
+												<!-- <a class="program-paper-link"
+												   href="slides/koharu-talk.pdf"
+												   target="_blank"
+												   rel="noopener">
+													Slides ↗
+												</a> -->
+
 											</div>
 
 											<div class="program-authors">
@@ -918,6 +944,13 @@ software and provided as a Docker image.
 												<h4 class="program-title">
 													Mathematical NLI: this should be easy!
 												</h4>
+
+												<a class="program-paper-link"
+												   href="slides/moss-talk.pdf"
+												   target="_blank"
+												   rel="noopener">
+													Slides ↗
+												</a>
 											</div>
 
 											<div class="program-authors">
